@@ -4,7 +4,7 @@ import './InputText.css'
 const InputText = (props) =>{
 
     const onTyping = (event) => {
-        props.changing = (event.target.value)
+        props.changing(event.target.value)
     }
     return(
         <div className="input-text">
